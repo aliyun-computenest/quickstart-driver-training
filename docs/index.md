@@ -12,7 +12,7 @@
 - 若您使用个人账号，可以直接创建服务实例
 - 若您使用RAM用户创建服务实例，且是第一次使用阿里云计算巢
     - 需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见[为RAM用户授
-      权](https://help.aliyun.com/document_detail/121945.html)。    |
+      权](https://help.aliyun.com/document_detail/121945.html)。
     
 ### 1. 部署入口
 
