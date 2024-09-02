@@ -12,7 +12,7 @@
 - 若您使用个人账号，可以直接创建服务实例
 - 若您使用RAM用户创建服务实例，且是第一次使用阿里云计算巢
     - 需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见[为RAM用户授
-      权](https://help.aliyun.com/document_detail/121945.html)。    |
+      权](https://help.aliyun.com/document_detail/121945.html)。
     
 ### 1. 部署入口
 
@@ -22,7 +22,7 @@
 
 在正式试用前，需要申请试用，按照提示填写信息，在审核通过后就可以创建机动车驾驶员培训一站式云解决方案。
 
-![1-2.png](E:\code\quickstart-driver-training\docs\1-2.png)
+![1-2.png](1-2.png)
 
 ### 3. 创建机动车驾驶员培训一站式云解决方案
 
@@ -38,7 +38,7 @@
 | 可用区配置           | 部署区域 | 可用区I       | 地域下的不同可用区域，确保实例非空                              |
 | 选择已有基础资源配置 | VPC ID   | vpc-xxx       | 按实际情况，选择专有网络的ID。                                   |
 | 选择已有基础资源配置 | 交换机ID | vsw-xxx       | 按实际情况，选择交换机ID。若找不到交换机, 可尝试切换地域和可用区 |
-| ECS实例配置          | 实例类型 | ecs.r6.xlarge | 当前支持ecs.r6.xlarge和ecs.r7a.xlarge规格                      |
+| ECS实例配置          | 实例类型 | ecs.r6.xlarge |        	按实际情况，选择ECS。               |
 | ECS实例配置 | 实例密码 | ******** | 设置实例密码。长度8~30个字符，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+={}[]:;'<>,.?/ 中的特殊符号）。 |
 
 #### 3.2 具体步骤
@@ -48,31 +48,31 @@
 - 创建实例名称，如下图中“test”
 - 选择地域，如下图中“华东1（杭州）”
 
-![2-1.png](E:\code\quickstart-driver-training\docs\2-1.png)
+![2-1.png](2-1.png)
 
 - 选择实例类型
 - 配置实例的密码
 - 选择部署区域，如下图中“可用区I”
 
-![2-2.png](E:\code\quickstart-driver-training\docs\2-2.png)
+![2-2.png](2-2.png)
 
 - 点击下一步，进入订单确认页面
 - 勾选“权限确认”和“服务条款”中的复选框
 - 点击左下角绿色背景的*开始免费试用*，即可创建服务实例
 
-![2-3.png](E:\code\quickstart-driver-training\docs\2-3.png)
+![2-3.png](2-3.png)
 
 ### 4. 启动机动车驾驶员培训一站式云解决方案服务
 
 - 查看服务实例：服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例，如下图
 
-![3.png](E:\code\quickstart-driver-training\docs\3.png)
+![3.png](3.png)
 
 
 - 点击web的链接，即可跳转访问已经部署好的管理后台
     - 通过登录页面上，输入demo手机号以及密码登录到驾校后台或者交通局管理端后台
 
-![5.png](E:\code\quickstart-driver-training\docs\5.png)
+![5.png](5.png)
 
 
 ## 常见问题FAQ
@@ -81,7 +81,7 @@
 
 有时，所选部署区域（如可用区G）没有所选套餐的可用资源，会报错如下图所示
 
-![trouble-1.jpg](E:\code\quickstart-driver-training\docs\trouble1.jpeg)
+![trouble-1.jpg](trouble1.jpeg)
 
 **解决办法**：尝试选择其他区域，如可用区I等
 
