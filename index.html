@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="计算巢是阿里云开放给企业应用服务商的服务管理平台。服务商能够在计算巢上发布私有化部署服务，为其客户提供云上软件一键部署的能力；同时也支持全托管模式的服务，赋能服务商托管其客户资源。">
+  <title>机动车驾驶员培训一站式云解决方案部署文档 - Aliyun 计算巢 x Demo</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+
+  
+
+  
+  
+
+  
+    <script src="search/main.js"></script>
+  
+
+  
+
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <img src="./img/logo-2x.png">
+        </div>
+        <div class="nav-list">
+          <ul>
+          
+              <li><a href="#_1">机动车驾驶员培训一站式云解决方案部署文档</a></li>
+              
+                  <li><a href="#_2">概述</a></li>
+                  
+              
+                  <li><a href="#_3">部署流程</a></li>
+                  
+                      <li class="li-h3"><a href="#0">0. 准备工作</a></li>
+                  
+                      <li class="li-h3"><a href="#1">1. 部署入口</a></li>
+                  
+                      <li class="li-h3"><a href="#2">2. 申请试用</a></li>
+                  
+                      <li class="li-h3"><a href="#3">3. 创建机动车驾驶员培训一站式云解决方案</a></li>
+                  
+                      <li class="li-h3"><a href="#4">4. 启动机动车驾驶员培训一站式云解决方案服务</a></li>
+                  
+              
+                  <li><a href="#faq">常见问题FAQ</a></li>
+                  
+                      <li class="li-h3"><a href="#_4">问题一：部署区域无可用资源</a></li>
+                  
+                      <li class="li-h3"><a href="#web">问题二: 启动后web访问不通</a></li>
+                  
+                      <li class="li-h3"><a href="#_5">问题三: 登录时的用户名密码不正确</a></li>
+                  
+              
+                  <li><a href="#_6">联系我们</a></li>
+                  
+              
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content theme-github">
+      
+      <div class="content-inner">        
+        
+        <h1 id="_1">机动车驾驶员培训一站式云解决方案部署文档</h1>
+<h2 id="_2">概述</h2>
+<p>机动车驾驶员培训一站式云解决方案是山东舜网传媒股份有限公司研发的一款服务于驾培行业的专业软件，本平台通过搭建驾培公共服务一体化平台，打通驾校、计时商、理论商以及车管所等之间的数据壁垒，为学员提供便捷高效的全方位服务。提供驾校形象展示、行业监管及相关行业服务，以大数据、智能化助力提升驾培行业服务标准和形象，解决了驾考行业乱象丛生,收费不规范、授课秩序混乱等问题。通过本平台，实现了驾考流程数字化监管，方便市民根据自身需求自主择校，助力打造优质营商环境，促进驾培行业健康有序发展</p>
+<h2 id="_3">部署流程</h2>
+<h3 id="0">0. 准备工作</h3>
+<p>在正式开始使用前，您需要一个阿里云账号，对ECS、VPC等资源进行访问和创建操作。</p>
+<ul>
+<li>若您使用个人账号，可以直接创建服务实例</li>
+<li>若您使用RAM用户创建服务实例，且是第一次使用阿里云计算巢<ul>
+<li>需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见<a href="https://help.aliyun.com/document_detail/121945.html">为RAM用户授
+  权</a>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">1. 部署入口</h3>
+<p>您可以在阿里云计算巢自行搜索，也可以通部署链接快速到达。</p>
+<h3 id="2">2. 申请试用</h3>
+<p>在正式试用前，需要申请试用，按照提示填写信息，在审核通过后就可以创建机动车驾驶员培训一站式云解决方案。</p>
+<p><img alt="1-2.png" src="1-2.png" /></p>
+<h3 id="3">3. 创建机动车驾驶员培训一站式云解决方案</h3>
+<h4 id="31">3.1 参数列表</h4>
+<p>您在创建服务实例的过程中，需要配置服务实例信息的参数列表，具体如下。</p>
+<table>
+<thead>
+<tr>
+<th>参数组</th>
+<th>参数项</th>
+<th>示例</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>服务实例名称</td>
+<td>N/A</td>
+<td>test</td>
+<td>实例的名称</td>
+</tr>
+<tr>
+<td>地域</td>
+<td>N/A</td>
+<td>华东1（杭州）</td>
+<td>选中服务实例的地域，建议就近选中，以获取更好的网络延时。</td>
+</tr>
+<tr>
+<td>付费类型配置</td>
+<td>付费类型</td>
+<td>按量付费</td>
+<td>免费使用请选用按量付费</td>
+</tr>
+<tr>
+<td>可用区配置</td>
+<td>部署区域</td>
+<td>可用区I</td>
+<td>地域下的不同可用区域，确保实例非空</td>
+</tr>
+<tr>
+<td>选择已有基础资源配置</td>
+<td>VPC ID</td>
+<td>vpc-xxx</td>
+<td>按实际情况，选择专有网络的ID。</td>
+</tr>
+<tr>
+<td>选择已有基础资源配置</td>
+<td>交换机ID</td>
+<td>vsw-xxx</td>
+<td>按实际情况，选择交换机ID。若找不到交换机, 可尝试切换地域和可用区</td>
+</tr>
+<tr>
+<td>ECS实例配置</td>
+<td>实例类型</td>
+<td>ecs.r6.xlarge</td>
+<td>按实际情况，选择ECS。</td>
+</tr>
+<tr>
+<td>ECS实例配置</td>
+<td>实例密码</td>
+<td><strong><em>*</em></strong>*</td>
+<td>设置实例密码。长度8~30个字符，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&amp;*_-+={}[]:;'&lt;&gt;,.?/ 中的特殊符号）。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="32">3.2 具体步骤</h4>
+<p>创建服务按如下步骤进行，参考下图：</p>
+<ul>
+<li>创建实例名称，如下图中“test”</li>
+<li>选择地域，如下图中“华东1（杭州）”</li>
+</ul>
+<p><img alt="2-1.png" src="2-1.png" /></p>
+<ul>
+<li>选择实例类型</li>
+<li>配置实例的密码</li>
+<li>选择部署区域，如下图中“可用区I”</li>
+</ul>
+<p><img alt="2-2.png" src="2-2.png" /></p>
+<ul>
+<li>点击下一步，进入订单确认页面</li>
+<li>勾选“权限确认”和“服务条款”中的复选框</li>
+<li>点击左下角绿色背景的<em>开始免费试用</em>，即可创建服务实例</li>
+</ul>
+<p><img alt="2-3.png" src="2-3.png" /></p>
+<h3 id="4">4. 启动机动车驾驶员培训一站式云解决方案服务</h3>
+<ul>
+<li>查看服务实例：服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例，如下图</li>
+</ul>
+<p><img alt="3.png" src="3.png" /></p>
+<ul>
+<li>点击web的链接，即可跳转访问已经部署好的管理后台<ul>
+<li>通过登录页面上，输入demo手机号以及密码登录到驾校后台或者交通局管理端后台</li>
+</ul>
+</li>
+</ul>
+<p><img alt="5.png" src="5.png" /></p>
+<h2 id="faq">常见问题FAQ</h2>
+<h3 id="_4">问题一：部署区域无可用资源</h3>
+<p>有时，所选部署区域（如可用区G）没有所选套餐的可用资源，会报错如下图所示</p>
+<p><img alt="trouble-1.jpg" src="trouble1.jpeg" /></p>
+<p><strong>解决办法</strong>：尝试选择其他区域，如可用区I等</p>
+<h3 id="web">问题二: 启动后web访问不通</h3>
+<p>web的启动需要一点点时间，请稍后刷新页面即可。</p>
+<h3 id="_5">问题三: 登录时的用户名密码不正确</h3>
+<p>请注意检查，登录时使用的密码请联系服务商电话 0531-67976194。</p>
+<h2 id="_6">联系我们</h2>
+<ul>
+<li>舜网软件研究院：<a href="https://cloud.e23.cn">https://cloud.e23.cn/</a></li>
+<li>联系电话 0531-67976194</li>
+</ul>
+        
+      </div>
+
+      <div class="copyrights">© 2009-2022 Aliyun.com 版权所有</div>
+    </div>
+  </div>
+  
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2024-09-23 07:22:07.311462+00:00
+  -->
+</body>
+</html>
